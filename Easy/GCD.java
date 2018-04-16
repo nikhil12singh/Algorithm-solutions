@@ -11,7 +11,7 @@ public class GCD {
 		   if(a%i==0 && b%i==0)
 		   { 
 			   index = i;
-		       break;
+		           break;
 		    }
 	     }
 		
