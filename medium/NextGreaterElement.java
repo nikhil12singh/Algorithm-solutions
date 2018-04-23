@@ -4,7 +4,7 @@ public class NextGreaterElement {
 
     public static int nextGreaterElement(int n) {
      
-    	char arr[] = String.valueOf(n).toCharArray();
+    char arr[] = String.valueOf(n).toCharArray();
     int i;
     
     for(i = arr.length-1;i>=0;i--)
@@ -39,7 +39,6 @@ public class NextGreaterElement {
     {
     	return -1;
     }
- 
     }
 
 	public static void main(String[] args) {
