@@ -81,5 +81,36 @@ public class TwoSum {
 		//System.out.println(output[0]);
 		
 		return output;
+		
+		// Method 3
+		/*
+		 int n = nums.length;
+		int num = 0;
+		int output[] = new int[2];
+		HashMap<Integer, Integer> hm = new HashMap<>();
+		
+		for(int i=0;i<n;i++)
+		{
+			if(hm.containsValue(target-nums[i]))
+			{
+				output[1] = i;
+				num = target - nums[i];
+				break;
+			}
+            else
+				hm.put(i, nums[i]);
+		}
+		
+		for(int i=0;i<n;i++)
+		{
+			if(nums[i]==num)
+			{
+				output[0] = i;
+				break;
+			}
+		}
+		
+		return output;
+		*/
     }
 }
