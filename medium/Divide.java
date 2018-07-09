@@ -1,9 +1,8 @@
 public class Divide {
 	
-	public static int divide(int dividend, int divisor) {
+	public int divide(int dividend, int divisor) {
         int count = 0;
         boolean flag = false;
-        
         if(divisor==Integer.MIN_VALUE && dividend == Integer.MAX_VALUE)
         	return 0;
         if(divisor==1)
@@ -57,11 +56,4 @@ public class Divide {
         
         return flag?-count:count;
     }
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		System.out.println(divide(Integer.MIN_VALUE,2));
-	}
-	
 }
